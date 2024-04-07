@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px;
+  By default the font-size of browser is 16px but we choose to keep 10px here because when we use rem in other elements then it would be easier for us to calculate its value in pixels by just multiplying the value with 10.
+  But if we keep it as 10px then it would not be a good user experience because even if use increases its browser's font-size even then our website would still use 10px as font-size. So for that we can use percentage as our responsive unit. We would set font-size as 62.5% because 10px 0.625 times is 16px which is the default browser's font-size. (10 / 16) * 100 = 62.5 */
+
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   font-weight: 400;
