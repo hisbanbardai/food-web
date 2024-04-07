@@ -18,3 +18,8 @@ body {
   line-height: 1;
   color: #555;
 }
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
