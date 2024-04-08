@@ -19,13 +19,19 @@ body {
   color: #555;
 }
 
-.section-hero {
+.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 9.6rem;
 
   max-width: 130rem;
   margin: 0 auto;
+}
+
+.section-hero {
+  background-color: #ffedcc;
+  padding: 9.6rem 0;
 }
 
 .heading-primary {
