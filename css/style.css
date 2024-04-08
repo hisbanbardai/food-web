@@ -85,3 +85,9 @@ body {
 .hero-img {
   width: 100%;
 }
+
+.margin-right-sm {
+  /* the above is a helper class that we can use anywhere 
+  !important because to ensure that this property has the highest property */
+  margin-right: 1.6rem !important;
+}
