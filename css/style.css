@@ -53,9 +53,10 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
-
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
+
+  transition: background-color 0.3s;
 }
 
 .btn-primary:link,
