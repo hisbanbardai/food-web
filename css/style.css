@@ -74,6 +74,16 @@ body {
 /* ********************** */
 /* HEADER SECTION*/
 /* ********************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffedcc;
+}
+
+.logo {
+  height: 2.2rem;
+}
 
 /* ********************** */
 /* HERO SECTION*/
