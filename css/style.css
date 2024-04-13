@@ -90,6 +90,28 @@ body {
 }
 
 /* ********************** */
+/* NAV SECTION*/
+/* ********************** */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+/* ********************** */
 /* HERO SECTION*/
 /* ********************** */
 .section-hero {
