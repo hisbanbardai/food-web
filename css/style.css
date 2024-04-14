@@ -41,6 +41,16 @@ body {
   margin-bottom: 9.6rem;
 }
 
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 1.6rem;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
