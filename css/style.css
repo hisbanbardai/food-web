@@ -82,6 +82,10 @@ body {
   gap: 9.6rem;
 }
 
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* ********************** */
 /* HEADER SECTION*/
 /* ********************** */
@@ -205,4 +209,9 @@ body {
 .section-how {
   background-color: blue;
   padding: 4.8rem 0 9.6rem 0;
+}
+
+.section-how div div {
+  background-color: #e67e22;
+  font-size: 3.2rem;
 }
