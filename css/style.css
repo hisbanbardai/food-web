@@ -23,7 +23,8 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /* ********************** */
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -39,6 +40,12 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
 }
 
 .sub-heading {
@@ -236,6 +243,9 @@ body {
   color: #ccc;
   font-weight: 600;
   margin-bottom: 1.2rem;
+}
+
+.step-heading {
 }
 
 .step-img {
