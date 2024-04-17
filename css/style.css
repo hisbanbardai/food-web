@@ -266,7 +266,6 @@ body {
 .step-img-box::before {
   content: "";
   display: block;
-  background-color: #fdf2e9;
   width: 60%;
   /* the below way of adding height using percentage does not work so we need to find an another way of giving height. 
   We can use padding-bottom: 60% because percentage in padding are based on width of the element not its height so it will give 60% of its parent element's width as padding-bottom
@@ -274,9 +273,12 @@ body {
   And as a result it will appear as a square
   */
 
+  background-color: #fdf2e9;
   padding-bottom: 60%;
+  border-radius: 50%;
 
   position: absolute;
+  z-index: -1;
 }
 
 .step-img {
