@@ -259,6 +259,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 }
 
 .step-img-box::before {
@@ -273,6 +275,8 @@ body {
   */
 
   padding-bottom: 60%;
+
+  position: absolute;
 }
 
 .step-img {
