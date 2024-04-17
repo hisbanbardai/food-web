@@ -278,6 +278,24 @@ body {
   border-radius: 50%;
 
   position: absolute;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 45%;
+  /* the below way of adding height using percentage does not work so we need to find an another way of giving height. 
+  We can use padding-bottom: 60% because percentage in padding are based on width of the element not its height so it will give 60% of its parent element's width as padding-bottom
+  height: 60px; 
+  And as a result it will appear as a square
+  */
+
+  background-color: #fae5d3;
+  padding-bottom: 45%;
+  border-radius: 50%;
+
+  position: absolute;
   z-index: -1;
 }
 
