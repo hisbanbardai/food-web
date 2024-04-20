@@ -123,6 +123,10 @@ body {
   align-items: center;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /* ********************** */
 /* HEADER SECTION*/
 /* ********************** */
