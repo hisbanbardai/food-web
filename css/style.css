@@ -131,6 +131,22 @@ strong {
   font-weight: 500;
 }
 
+.link:link,
+.link:visited {
+  display: inline;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 /* ********************** */
 /* HEADER SECTION*/
 /* ********************** */
@@ -435,4 +451,9 @@ strong {
 .list-icon {
   font-size: 3rem;
   color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
