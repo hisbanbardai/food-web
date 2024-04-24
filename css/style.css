@@ -498,3 +498,14 @@ strong {
   font-size: 1.6rem;
   color: #777;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+}
