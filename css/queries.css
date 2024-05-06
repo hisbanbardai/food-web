@@ -135,6 +135,35 @@
     justify-content: center;
     align-items: center;
     gap: 4.8rem;
+    transition: all 0.5s;
+
+    /* HIDE NAVIGATION */
+    /* display: none */
+    /* we cannot use display:none to hide navigation because then we will not be able to apply any transitions/animations on it. */
+
+    /* The correct steps to hide a navigation are as follows: */
+    /* 1. Apply opacity: 0 to make it invisible  */
+    opacity: 0;
+
+    /* 2. Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: none;
+  }
+
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .main-nav-link:link,
