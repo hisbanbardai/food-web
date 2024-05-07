@@ -175,3 +175,42 @@
     font-size: 3rem;
   }
 }
+
+/* ********************** */
+/* BELOW 704px (Smaller desktops)*/
+/* ********************** */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    /* we are implementing the below grid because for this breakpoint we wanted the 3 nav cols to be in the first row and logo col and address col to be in the second row. We could have done repeat(3, 1fr), and that would give equal space to the 3 nav cols but we also wanted to give equal space to the logo and address cols in the second row so for that we created a grid with 6 columns, where each nav-col spans 2 columns in the first row and address and logo col spans 3 columns in the second row */
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
