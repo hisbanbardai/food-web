@@ -120,6 +120,8 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    /* to make sure that navigation button always stay on top  */
+    z-index: 1000;
   }
 
   .main-nav-list {
