@@ -11,6 +11,8 @@ html {
 
   font-size: 62.5%;
   overflow-x: hidden;
+  /* Might not work for all browsers */
+  /* scroll-behavior: smooth; */
 }
 
 body {

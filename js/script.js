@@ -10,6 +10,37 @@ navBtnEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+//Smooth scrolling animation
+const linkEl = document.querySelectorAll("a:link");
+linkEl.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const attrVal = link.getAttribute("href");
+
+    //scroll to top
+    if (attrVal === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    //scroll to specific section
+    if (attrVal.startsWith("#") && attrVal.length > 1) {
+      const sectionEl = document.querySelector(attrVal);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //close mobile navigation when we click on any navigational link in nav
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
+
+/* Write code for the following:
+  Scroll to top
+  Scroll to other links
+  Close mobile navigation when we click on any navigational link
+*/
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
