@@ -35,11 +35,33 @@ linkEl.forEach(function (link) {
   });
 });
 
-/* Write code for the following:
-  Scroll to top
-  Scroll to other links
-  Close mobile navigation when we click on any navigational link
-*/
+//Sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entries) {
+    // entries is an array of values that we get based on the options object we provided below
+    const ent = entries[0];
+    console.log(ent);
+    if (!ent.isIntersecting) {
+      /* we will add the sticky class to the body so that we can use it as a parent class and only apply css styles of sticky navigation to header when the sticky class is present just like we did for mobile navigation .nav-open  */
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // root: null means we want to observe the element inside the viewport and not some specific container element.
+    // threshold: 0 means an event will fire as soon as the hero section is out of the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+    //the 80px is the fixed height that we gave to the sticky class
+  }
+);
+//we are going to use 'obs' to observe an html element which in our cases is hero section
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
