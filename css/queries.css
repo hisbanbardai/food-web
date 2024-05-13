@@ -18,7 +18,7 @@
 }
 
 /* ********************** */
-/* BELOW 1200px (Smaller desktops)*/
+/* BELOW 1200px (Landscape tablets)*/
 /* ********************** */
 @media (max-width: 75em) {
   html {
@@ -57,7 +57,7 @@
 }
 
 /* ********************** */
-/* BELOW 944px (Smaller desktops)*/
+/* BELOW 944px (Tablets)*/
 /* ********************** */
 @media (max-width: 59em) {
   html {
@@ -179,7 +179,7 @@
 }
 
 /* ********************** */
-/* BELOW 704px (Smaller desktops)*/
+/* BELOW 704px (Smaller tablets)*/
 /* ********************** */
 @media (max-width: 44em) {
   .grid--3-cols,
@@ -218,7 +218,7 @@
 }
 
 /* ********************** */
-/* BELOW 544px (Smaller desktops)*/
+/* BELOW 544px (Mobile phones)*/
 /* ********************** */
 @media (max-width: 34em) {
   .grid {
